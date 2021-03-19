@@ -1,0 +1,62 @@
+Agenda/Notes - Mar 16, 2020
+
+
+1) Schedules/Deadlines
+	-When are people free?
+		Artem - Mainly weekends/ Tues 7-9pm /Thurs 7-10pm EST majority of planning/coding/etc
+		Alex - Flexible
+		Calvin - Flexible		
+		
+	-How do we want/should split up the work in the project e.g. like the roles defined? 
+		We will work collaboratively for now. Calvin will do some pre-planning ahead of meeting.
+	
+	-Proposed schedule:
+		-Tues/Thurs 7-9pm EST majority of planning/coding/etc.
+		-Thurs-Sat finish up uncompleted parts in the two day sessions
+		-Sat midnight soft deadline for assigned tasks
+		-Sun TBD a brief runthrough of entire project/segment
+	
+
+2) Project Idea
+	
+	-Idea: Game app prediction
+		-Use app dataset on kaggle on the following links:
+			-https://www.kaggle.com/kboghe/android-apps-metadata
+			-https://www.kaggle.com/lava18/google-play-store-apps
+			-https://www.kaggle.com/tristan581/17k-apple-app-store-strategy-games **we can use this for first segment to prototype
+		-Use app data to predict rating of game based on various metrics
+		-After first segment, we can look to do deeper analysis with other datasets
+			-merge datasets from the other links
+			-create new data tables
+			-create relationships
+			-store in sqlite
+
+3) Requirements for Segment 1
+	
+	-GitHub setup
+		-Create branches
+			-data preprocessing
+			-analysis
+	-Preprocessing
+		-select sample data from the app games csv
+		-basic cleaning steps to ensure we can run machine learning
+	-Machine Learning
+		-choose machine learning e.g. regression analysis, to return value for our research question
+
+4) Brainstorming - TBC 3/18/2021
+
+	-Observations on given data
+	-What are we trying to predict?
+	-Are we able to predict our question? If not, how else should we go about this?
+
+5) Pseudo Coding - TBC 3/18/2021
+
+	-Map out the coding required to complete our segment
+
+6) Coding - TBC 3/18/2021
+
+	-Fill out code required to make the prototype
+
+7) Questions for Dylan - TBC 3/18/2021
+
+	-We are planning to work collaboratively for now, how do we show our work on GitHub to show we've equally contributed?

@@ -1,0 +1,74 @@
+Agenda/Notes - Mar 18, 2020
+
+1) Brainstorming/Data Exploration/Presentation
+	-Decide which db to use/start with:
+			-https://www.kaggle.com/kboghe/android-apps-metadata***
+			-https://www.kaggle.com/lava18/google-play-store-apps
+			-https://www.kaggle.com/tristan581/17k-apple-app-store-strategy-games
+	-Questions to explore:
+		-Observations on given data
+		-What are we trying to predict?
+			-Rating***
+			-Downloads/# of Reviews
+		-Are we able to predict our question? If not, how else should we go about this?
+
+	Scenario: Look for predictive features such as privacy/age-range/price/genre/etc. on outcome variables such as rating/downloads/# of reviews
+
+Given our machine learning model:
+	-check which features are relevant i.e. p-value evaluation
+	-evaluate/predict our game's success based on our trained nn model where a game with x/y/z/ features should produce a given rating.
+
+Preprocessing:
+	-load clean data
+	-split data into manageable chunks
+
+2) GitHub Setup
+	As per photo minus segment branches	
+
+3) Pseudo Coding
+	-Dependencies/Packages
+	-Preprocessing
+	-Machine Learning
+
+4) Coding
+	-Dependencies/Packages/Resources
+	-Preprocessing code block
+	-Machine learning code block
+
+5) Next Steps/Session
+
+6) Questions for Dylan
+	-How to show contribution from everyone if we do this collaboratively?
+	-What do we need for the schema at this stage?
+
+GitHub Team:
+
+	-Calvin: calvinwkchu
+	-Artem: noble190
+	-Alex: alexk9220
+	-Dylan: DNason1999
+
+Reference for requirements in Segment 1:
+	
+	-Presentation:
+		-Create readme with the following questions answered:
+			-Selected topic
+			-Reason they selected the topic
+			-Description of the source of data
+			-Questions they hope to answer with the data
+	
+	-GitHub setup
+		-Create branches:
+			-data preprocessing
+			-analysis
+		-Create communication protocol??
+
+	-Preprocessing
+		-Select sample data from the app games csv
+		-Basic cleaning steps to ensure we can run machine learning
+
+
+
+	-Machine Learning
+		-Choose machine learning e.g. regression analysis, to return value for our research question
+		-Run machine learning on preprocessed database
