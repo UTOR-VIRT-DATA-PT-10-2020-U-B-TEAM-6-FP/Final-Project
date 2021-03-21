@@ -4,7 +4,12 @@ Agenda/Notes - Mar 20, 2020
 1) Coding
 	-Dependencies/Packages/Resources
 	-Preprocessing code block
+		-Issues encountered: 
+			-numberreviews column had objects in its data row which required conversion to numbers
+			-had too many redundant columns
+			-dtypes of columns were incorrect
 	-Machine learning code block
+			-model suffers from low accuracy using linear regression
 
 2) Presentation
 	-Create readme with the following questions answered:
