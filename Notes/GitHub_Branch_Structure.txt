@@ -1,0 +1,30 @@
+GitHub Folder Structure/Attributes
+
+Main Branch 
+	-Only merged with segment folders that have been reviewed and acts as a 'final' submission
+	-Is updated by different segment folders
+
+Development Branch
+	-Merged from sub-branches as defined by drawing, intended to be compiled work prior to review
+	-Develop branch can be also updated from segment related changes (if any)
+	-Contains all planning/notes made during the development
+	-Contains latest resources
+	-Create separate branches based on our submission
+
+Preprocessing Branch
+	-Contains all preprocessing related code including python via juypter notebook and any sql query code
+	-Completion of branch is merged to development branch
+	-Can be merged from feature branches pending
+
+Analysis Branch
+	-Contains all machine learning related analysis code done given preprocessed data given from latest development update
+	-Completion of branch is merged to development branch	
+	-Can be merged from feature branches pending
+
+Presentation/Planning Branch
+	-Contains all presentation related material including tableau presentation, google slides, and project explanations
+	-Completion of branch is merged to development branch
+	
+Feature Branch
+	-Contains any additional features members would like to add to existing code prior to collaboration session
+	-These features will be reviewed collaboratively during session and merged with their respective branches
