@@ -12,13 +12,13 @@ The reason we chose this topic is because we were interested to utilize the thin
 
 -Description of the source of data:
 
-Our data is from Kaggle, where the source was obtained through scraping of millions of Android smartphone logs & app meta data.
+Our data is from Kaggle, where the source was obtained through scraping of millions of Android smartphone logs & app metadata.
 
 Source data: https://www.kaggle.com/kboghe/android-apps-metadata
 
--Questions they hope to answer with the data:
+-Questions hope to be answered with the data:
 
-Through this project, we are hoping to find out what are the main features that cause a game app to succeed/fail which is approximated by its ratings by users. We will first preprocess the given dataset that will then be put through a machine learning algorithim to help build a model that will determine a game app's rating. A successful model will allow for real life application where mobile game creators can use this to tune their game for greater chance of success.
+Through this project, we are hoping to find out what are the main features that cause a game app to succeed/fail which can be approximated by its ratings by users. We will first preprocess the given dataset that will then be put through a machine learning algorithim to help build a model that will determine a game app's rating. A successful model will allow for real life application where mobile game creators can use this to tune their game for greater chance of success e.g. if having games free is a factor in determining higher game rating, then creators should reconsider their pricing strategies.
 
 -Progress so far:
 
