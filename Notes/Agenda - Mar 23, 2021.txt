@@ -4,20 +4,29 @@ Agenda/Notes - Mar 23, 2021
 1) Brainstorm ideas/progression:
 
 Preprocessing/DB Structure
-	-Create separate table to determine if there is more than 1 game produced by given company
-	-Separate table of company size based on # of downloads
-	
+	-On main table, group metrics into a discrete variable from 0 to 5... may need to round ratings data
+	-Create separate table grouped by company
+		-count of # of unique games made 
+			-> make variable of experienced vs unexperienced
+		-count of total downloads 
+			-> use clustering to figure out best fit groups for size i.e. small/med/large
+		-export as separate csv
+	-Export tables to sql, use query to join the two tables			
+
 Analysis
 	-Use density plots to determine where data starts falling off to cut out data
-	-Use p-value to determine linearity of features?
+	-Use chi-square to determine significance of features
+		-build contingency table based on encoded columns
+		-run chi-square to determine significance of features
+		-remove certain features not meeting threshold?
 	-How else can we use certain features we had removed
 
 Machine Learning
 	-Add additional features and run through models
 	-Do we build another model to predict # of downloads or taken together as a singular metric?
-	-Keep linear model as reference?
+	-Should run logistical instead of linear model
 	-Use supervised learning to compute produce model e.g. random forest
-	-Use neural network to produce better model	
+	-Use neural network to produce better model
 
 Presentation
 	-How do we have an interactive element to our project?
