@@ -1,0 +1,29 @@
+Agenda/Notes - Mar 23, 2021
+
+
+1) Brainstorm ideas/progression:
+
+Preprocessing/DB Structure
+	-Create separate table to determine if there is more than 1 game produced by given company
+	-Separate table of company size based on # of downloads
+	
+Analysis
+	-Use density plots to determine where data starts falling off to cut out data
+	-Use p-value to determine linearity of features?
+	-How else can we use certain features we had removed
+
+Machine Learning
+	-Add additional features and run through models
+	-Do we build another model to predict # of downloads or taken together as a singular metric?
+	-Keep linear model as reference?
+	-Use supervised learning to compute produce model e.g. random forest
+	-Use neural network to produce better model	
+
+Presentation
+	-How do we have an interactive element to our project?
+	-What should we present in terms of graphics?
+
+2) Next steps
+
+-Split up to work on certain features individually and collab on Thurs to review work
+
