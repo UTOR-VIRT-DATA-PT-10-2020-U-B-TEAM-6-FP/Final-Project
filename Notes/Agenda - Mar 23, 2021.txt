@@ -50,4 +50,11 @@ Presentation
 2) Next steps
 
 -Split up to work on certain features individually and collab on Thurs to review work
+-Artem will try to work on Preprocessing side
+-Calvin will try to work on Analysis, especially on statistical testing
+
+-Artem Schedule Thurs/Sat (9am)/Sun(maybe)
+
+
+
 
