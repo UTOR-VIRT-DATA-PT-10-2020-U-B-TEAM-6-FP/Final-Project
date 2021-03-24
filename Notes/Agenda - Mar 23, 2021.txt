@@ -7,19 +7,29 @@ Preprocessing/DB Structure
 	-On main table, group metrics into a discrete variable from 0 to 5... may need to round ratings data
 	-Create separate table grouped by company
 		-count of # of unique games made 
-			-> make variable of experienced vs unexperienced
+			-> make variable of experienced (1<) vs unexperienced (1)
 		-count of total downloads 
-			-> use clustering to figure out best fit groups for size i.e. small/med/large
+			-> use clustering to figure out best fit groups for size i.e. small/med/larg
 		-export as separate csv
+	-Normalization of data
 	-Export tables to sql, use query to join the two tables			
 
 Analysis
 	-Use density plots to determine where data starts falling off to cut out data
-	-Use chi-square to determine significance of features
+		-why we cut out certain number of reviews data
+	-Use chi-square to determine significance of features y, [x1,x2...]
 		-build contingency table based on encoded columns
 		-run chi-square to determine significance of features
 		-remove certain features not meeting threshold?
 	-How else can we use certain features we had removed
+	-Co-linearity amongst features e.g. gambling & micro-transactions
+	-Find distribution of data
+		-Bin ratings into count bar chart
+		-Paid vs free games
+		-Genre breakdown of all games
+		-Age rating breakdown of games
+		-Drill down ratings based on genre/rating to notice trends
+		-Downloads
 
 Machine Learning
 	-Add additional features and run through models
@@ -30,7 +40,12 @@ Machine Learning
 
 Presentation
 	-How do we have an interactive element to our project?
+		-Dashboard -> rate your game app based on tuning parameters?
 	-What should we present in terms of graphics?
+	-Questions to answer?
+		-What features do you think are important?
+		-Expand on those features where we think are really important/interesting like genre, paid vs free app, age rating, do ads annoy people enough, etc.	
+
 
 2) Next steps
 
