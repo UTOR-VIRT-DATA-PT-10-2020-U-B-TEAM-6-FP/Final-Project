@@ -1,0 +1,6 @@
+Stats Analysis Notes
+
+-Linear regression gives us a poor predictive fit for our data
+-Cannot use t-test for p-value evaluation because data might not be normal and input data isnt continuous??
+-chi-test only works on two variables at a time
+-anova test
