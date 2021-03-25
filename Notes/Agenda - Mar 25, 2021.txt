@@ -10,6 +10,12 @@ Calvin:
 -may need to change output variable as it does not seem any one particular parameter is influencing it right now
 -may need to take out # of reviews removal of data points for more data
 
+2) Questions:
+
+-How do we need to present the dashboard?
+-How should we evaluate the features?
+-
+
 2) Pseudo Coding:
 
 Preprocessing/DB Structure
