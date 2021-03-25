@@ -1,0 +1,56 @@
+Agenda/Notes - Mar 25, 2021
+
+1) Findings
+
+Calvin:
+
+-tested using p-values of independent variables, most of them do not exceed threshold i.e. cannot reject null hypothesis
+-tried using chi-square, but it is supposed to only test 1 dependent and 1 independent variable
+-did some powerbi visualization, found most ratings clustered around 4...therefore may not be good to round ratings data as proposed
+-may need to change output variable as it does not seem any one particular parameter is influencing it right now
+-may need to take out # of reviews removal of data points for more data
+
+2) Pseudo Coding:
+
+Preprocessing/DB Structure
+	-On main table, group metrics into a discrete variable from 0 to 5... may need to round ratings data
+	-Create separate table grouped by company
+		-count of # of unique games made 
+			-> make variable of experienced (1<) vs unexperienced (1)
+		-count of total downloads 
+			-> use clustering to figure out best fit groups for size i.e. small/med/larg
+		-export as separate csv
+	-Normalization of data
+	-Export tables to sql, use query to join the two tables			
+
+Machine Learning
+	-Add additional features and run model
+	-Should run logistical instead of linear model
+	-Use supervised learning to compute produce model e.g. random forest
+	-Use neural network to produce better model
+
+Analysis/Presentation
+	-Co-linearity amongst features e.g. gambling & micro-transactions 
+		-tough to do because all our outcomes are binary (see seaborn graph)
+	-Find distribution of data (see Power BI doc)
+		-Bin ratings into count bar chart
+		-Paid vs free games
+		-Genre breakdown of all games
+		-Age rating breakdown of games
+		-Drill down ratings based on genre/rating to notice trends
+		-Downloads
+	-How do we have an interactive element to our project?
+		-Dashboard -> rate your game app based on tuning parameters?
+		-Drill downs with PowerBI
+	-Questions to answer?
+		-What features do you think are important?
+		-Expand on those features where we think are really important/interesting like genre, paid vs free app, age rating, do ads annoy people enough, etc.	
+
+
+3) Coding
+
+
+
+
+
+
