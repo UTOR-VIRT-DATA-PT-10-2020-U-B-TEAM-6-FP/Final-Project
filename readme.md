@@ -24,6 +24,45 @@ Through this project, we are hoping to find out what are the main features that 
 
 To date, we have successfully preprocessed the given dataset and able to run a simple machine learning algorithim to predict game app rating based on various features as defined.
 
+## Database/Pre-Processing
+
+Progress so far:
+
+-Removed extra columns that we felt weren't necessary
+-Transformed a number of rows on number reviews column, where some numerical values are objects and were transformed accordingly
+-Removed erroneous rows on numer reviews columns i.e. objects
+-Removed rows where number reviews is less than 1,000, as ratings may not be reflective with lower reviews (still debating about)
+-Export file as csv
+
+Plans:
+
+-On main table, group metrics into a discrete variable from 0 to 5... may need to round ratings data
+-Create separate table grouped by company
+	-count of # of unique games made 
+		-> make variable of experienced (1<) vs unexperienced (1)
+	-count of total downloads 
+		-> use clustering to figure out best fit groups for size i.e. small/med/larg
+	-Export as separate csv
+	-Normalization of data
+	-Export tables to sql, use query to join the two tables	
+
+## Machine Learning
+
+Progress so far:
+
+-Removed extra columns that are not needed for machine learning
+-Encoded categorical columns
+-Ran linear regression analysis and obtained r^2 accuracy
+-Ran p-values off linear regression
+
+
+Plans:
+
+-Add additional features and run model
+-Should run logistical instead of linear model
+-Use supervised learning to compute produce model e.g. random forest
+-Use neural network to produce better model due to complexity of features
+
 ## GitHub Structure/Communication Protocol
 
 Main Branch 
