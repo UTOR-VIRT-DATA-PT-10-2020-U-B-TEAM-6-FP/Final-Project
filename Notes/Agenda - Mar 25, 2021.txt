@@ -12,7 +12,7 @@ Calvin:
 
 2) Questions:
 
--How do we need to present the dashboard?
+-How do we need to present the dashboard? Can use Tableau or through hiroku
 -How should we evaluate the features?
 -
 
@@ -53,7 +53,15 @@ Analysis/Presentation
 		-Expand on those features where we think are really important/interesting like genre, paid vs free app, age rating, do ads annoy people enough, etc.	
 
 
-3) Coding
+3) Accomplished/Questions to follow up
+
+-we may need to figure out another metric if we want to do a predictive type of machine learning
+-found another dataset to join onto our main one, lose ~1/4 of rows
+-Mike suggested we focus more on unsupervised learning on our cleaned dataset to show interesting analysis of our dataset rather than trying to predict something
+-presentation should briefly touch on our coding but mainly on the analysis/conclusions drawn from our dataset
+
+
+
 
 
 
