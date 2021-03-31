@@ -1,0 +1,72 @@
+Presentation Script
+
+Intro
+
+-What makes a game app successful?
+
+Dataset
+
+Kaggle: app data + googleplaystore data
+
+	Attributes/Features:
+	-Genre
+	-Interaction
+	-Ads
+	-Age
+	-Size
+	-Price
+	-Tracking
+	-Microtxs
+	-File size
+	-etc.
+
+	Outcomes:
+	-Downloads
+	-Rating
+
+	Other Variables:
+	-Release Date
+	-# of Reviews
+
+Success Factors
+
+	Ratings:
+	-Qualitative measure for user enjoyment
+	-Weakness: Results may be skewed where very little votes influence the final result and may nto be the 'true' rating i.e. need 
+	large enough votes to get more accurate assessment of rating
+	-To mitigate weakness, establish threshold with # of minimum reviews that is adjusted for time
+	
+	Number of Installs
+	-Quantitative measure of how many users are interested/engaged in game
+	-Weakness: Only given absolute measure and therefore influenced by time (should be inverse log relationship over time)
+	-To mitigate weakness, adjust the installs for time i.e. average out total installs per year, and measure against same segment (year)
+
+Relationship between success factors
+
+-There appears to be an inverse log relationship between installs # (standardized) & ratings
+-Combine the two factors into one singular metric that evaluates overall success e.g. multiple metrics together, natural log, etc.
+
+Feature Analysis
+
+-General high level breakdown/plot of various features against our created metric
+-General shape of our features in our dataset
+
+Machine Learning
+
+-Use regression of features against our metric
+-Use random forest against our metric
+-Use PCA for features into random forest against our metric
+
+Discussion of Machine Learning
+-Discuss accuracies of each algorithim
+-Discuss coefficient strengths of certain features and give explain why/refer back to feature analysis
+
+Summarized Conclusions
+-Restate our question
+-Discuss our success metric
+-Discuss certain features we think are important
+-Discuss ML results & observations
+
+
+
+
