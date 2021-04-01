@@ -22,7 +22,7 @@ Kaggle: app data + googleplaystore data
 		-Shares information
 
 	Outcomes Variables:
-	-Downloads
+	-Installs
 	-Rating
 
 	Other Variables to Consider:
