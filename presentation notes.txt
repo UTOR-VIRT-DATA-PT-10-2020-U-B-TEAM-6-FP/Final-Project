@@ -10,21 +10,22 @@ Kaggle: app data + googleplaystore data
 
 	Attributes/Features:
 	-Genre
-	-Interaction
-	-Ads
 	-Age
-	-Size
-	-Price
-	-Tracking
-	-Microtxs
-	-File size
-	-etc.
+	-Interaction
+	-Company Experience
+	-Monetary
+		-Ads
+		-Microtransactions
+		-Price
+	-Privacy
+		-Shares location
+		-Shares information
 
-	Outcomes:
+	Outcomes Variables:
 	-Downloads
 	-Rating
 
-	Other Variables:
+	Other Variables to Consider:
 	-Release Date
 	-# of Reviews
 
@@ -34,7 +35,7 @@ Success Factors
 	-Qualitative measure for user enjoyment
 	-Weakness: Results may be skewed where very little votes influence the final result and may nto be the 'true' rating i.e. need 
 	large enough votes to get more accurate assessment of rating
-	-To mitigate weakness, establish threshold with # of minimum reviews that is adjusted for time
+	-To mitigate weakness, establish threshold with # of minimum reviews 
 	
 	Number of Installs
 	-Quantitative measure of how many users are interested/engaged in game
@@ -43,8 +44,8 @@ Success Factors
 
 Relationship between success factors
 
--There appears to be an inverse log relationship between installs # (standardized) & ratings
--Combine the two factors into one singular metric that evaluates overall success e.g. multiple metrics together, natural log, etc.
+-There appears to be an inverse log relationship between installs # & ratings
+-Combine the two factors into one singular metric that evaluates overall success using PCA
 
 Feature Analysis
 
@@ -53,13 +54,14 @@ Feature Analysis
 
 Machine Learning
 
--Use regression of features against our metric
--Use random forest against our metric
--Use PCA for features into random forest against our metric
+-Use PCA & clustering on outcome variables
+-Use regression of features against our metric to see coefficient/p-value testing
+-Use random forest to predict clusters to see what predicts the clusters best
 
 Discussion of Machine Learning
--Discuss accuracies of each algorithim
--Discuss coefficient strengths of certain features and give explain why/refer back to feature analysis
+-Discuss PCA metric & cluster relationships
+-Discuss regression results
+-Discuss random forest results
 
 Summarized Conclusions
 -Restate our question
