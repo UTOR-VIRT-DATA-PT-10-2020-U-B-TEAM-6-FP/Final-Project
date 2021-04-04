@@ -8,7 +8,7 @@ Our group decided to look at phone app data, targeting specifically on games and
 
 Reason for selected the topic:
 
-The reason we chose this topic is because we were interested to utilize the things we learned into real life application and were generally interested in how ratings for phone apps come about.
+The reason we chose this topic is because we were interested to utilize the things we learned into real life application and were generally interested in what makes games a success in the mobile industry.
 
 Description of the source of data:
 
