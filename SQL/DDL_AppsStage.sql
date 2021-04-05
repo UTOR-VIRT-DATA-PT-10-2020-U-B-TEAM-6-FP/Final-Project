@@ -1,0 +1,36 @@
+CREATE TABLE [dbo].[AppsStage](
+	[AppID] [int] IDENTITY(1,1) NOT NULL,
+	[AppName] [varchar](500) NOT NULL,
+	[AppFancyName] [varchar](500) NULL,
+	[CompanyName] [varchar](500) NOT NULL,
+	[Purchases] [bit] NULL,
+	[Ads] [bit] NULL,
+	[SharesInfo] [bit] NULL,
+	[SharesLocation] [bit] NULL,
+	[UnrestrictedInternet] [bit] NULL,
+	[UsersInteract] [bit] NULL,
+	[AgeRating] [varchar](50) NOT NULL,
+	[ParentalGuidance] [bit] NULL,
+	[Downloads] [bigint] NULL,
+	[Category] [varchar](50) NOT NULL,
+	[LowPrice] [numeric](8, 2) NULL,
+	[TopPrice] [numeric](8, 2) NULL,
+	[Price] [varchar](50) NULL,
+	[PaidApp] [bit] NULL,
+	[Rating] [numeric](2, 1) NULL,
+	[RatingCount] [bigint] NOT NULL,
+	[Installs] [varchar](50) NULL,
+	[MinimumInstalls] [bigint] NULL,
+	[MaximumInstalls] [bigint] NULL,
+	[Free] [bit] NULL,
+	[ReleaseDate] [date] NOT NULL,
+	[LastUpdated] [date] NULL,
+	[EditorsChoice] [bit] NULL,
+	[DaysOnMarket] [int] NULL,
+	[ReleaseYear] [varchar](4) NULL,
+	[RelativeDownloadsPerformance] [numeric](12, 8) NULL,
+ CONSTRAINT [PK_AppsStage] PRIMARY KEY CLUSTERED 
+(
+	[AppID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
