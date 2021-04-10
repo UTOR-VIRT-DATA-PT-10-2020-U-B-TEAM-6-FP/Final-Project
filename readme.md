@@ -26,6 +26,23 @@ Description of data exploration phase of the project:
 
 To better understand our dataset, our initial step was to plot the various variables against each other to discover any potential relationships among the variables using Tableau. Unfortunately due to the nature of the dataset, it was difficult to find any obvious relationships other than plotting the two outcome variables against each other, where it showed a diminishing returns type plot; the theory here is that low ratings is associated with low downloads i.e. game is poor therefore performance is also poor, up until a certain threshold where ratings do not relate as strongly with downloads. Further analysis is done via machine learning to assist with better analysis.
 
+Description of analysis phase of project:
+
+Our initial analysis was to find out our shape of data including finding their respective distributions/quartiles and to scope out if there were any obvious trends (there weren't anything popping out of the page). Most of our initial analysis was done via graphing and can be seen in our Tableau dashboard (see link further below).
+
+Technologies Used:
+
+-Python
+	-Sklearn
+	-Plotly
+	-Pandas
+	-Numpy
+	-Date Time
+	-Pyodbc
+-Microsoft SQL
+-Tableau
+
+
 Google slides link: https://docs.google.com/presentation/d/1YsTrKkXzDnzWGElksHiISTcvOJJ-okg0IZHveucjpxA/edit?usp=sharing
 
 ## Machine Learning Model
@@ -53,49 +70,30 @@ Once clustering was complete, we used unsupervised learning for further analysis
 
 <img src='clusters.png'>
 
-Next we perform a logistic regression using the clusters as our outcome variable on our features. We split the data into 75/25 between training and testing in preparation of our model.
+Next we perform a logistic regression using the clusters as our outcome variable on our features. We split the data into 75/25 between training and testing in preparation of our model. No additional training was done to our model.
+
+Explanation of changes:
+
+Since segment 2, we made a minor change in our encoding strategy, where we used get dummies instead of the encoder so that we obtain a breakdown of genre and age rating impact individually on the model. As a result of the change, the model accuracy remained about the same but the impact of genre has been reduced in the model.
 
 Explanation of model choice, including limitations and benefits:
 
-We chose random forest as our logistic regression model due to its reliable performance, ability to process complex multiple outcomes i.e. SVM can only process binary outcomes and explanatory power i.e. neural network suffers from poor explanatory of results. With this model, we were able to rank importance of features per model outcomes as shown below and was able to achieve an accuracy of 47.5%.
+We chose random forest as our logistic regression model due to its reliable performance, ability to process complex multiple outcomes i.e. SVM can only process binary outcomes and explanatory power i.e. neural network suffers from poor explanatory of results. Unfortunately the model suffers from potential lack of data for extreme outcomes i.e. clusters 0 & 3, and we may need to perform oversampling techniques to potentially mitigate these effects.
+
+Description and explanation of model's confusion matrix, including final accuracy score:
+
+From the confusion matrix seen below, we see that our model is much better at predicting clusters 1 & 2, while performing poorly for clusters 0 & 3. We also notice that errors in prediction are usually within 1 cluster of each other. 
+
+<img src='confusion_matrix.png'>
+
+Our combined model accuracy is 50.6% and the results are seen below. From the importance ranking, we see that genre & age ranking are our most important indicators of influencing which cluster a given game app will belong to. 
 
 <img src='rf_results.png'>
 
-Unfortunately the model is limited in showing how each feature related to different cluster values, we only see the general impact.
-
 ## Dashboard
 
-We will be using Tableau to display our story/dashboard, and draft is shown in link: https://public.tableau.com/profile/calvin3235#!/vizhome/Book1_16173106290070/Story1
+We will be using Tableau to display our story/dashboard in the following link: https://public.tableau.com/profile/calvin3235#!/vizhome/dashboards_16178363779870/CategoryDashboard?publish=yes
 
-Our interactive feature will allow users to filter results based on the cluster selected in our dashboard.
+Our interactive feature allows users to drill down into specific variables for deeper analysis.
 
-## GitHub Structure/Communication Protocol
-
-Main Branch 
-	-Only merged with development folders that have been reviewed and acts as a 'final' submission
-	-Is updated by by different development folders
-
-Development Branch
-	-Merged from sub-branches as defined by drawing, intended to be compiled work prior to review
-	-Develop branch can be also updated from segment related changes (if any)
-	-Contains all planning/notes made during the development
-	-Create separate development branches based on weekly submissions
-
-Preprocessing Branch
-	-Contains all preprocessing & query related code for analysis/cleaning done on dataset 
-	-Completion of branch is merged to development branch upon collaborative review
-	-Can be merged from feature branches pending collaborative review
-
-Analysis Branch
-	-Contains all machine learning related analysis code done given preprocessed data given from latest development update
-	-Completion of branch is merged to development branch upon collaborative review
-	-Can be merged from feature branches pending collaborative review
-
-Presentation/Planning Branch
-	-Contains all presentation related material including tableau presentation, google slides, and project explanations
-	-Completion of branch is merged to development branch
-
-A drawing of GitHub structure shown below:
-
-<img src='GitHub Structure.png'>
 
