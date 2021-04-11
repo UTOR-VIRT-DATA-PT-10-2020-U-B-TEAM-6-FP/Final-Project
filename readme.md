@@ -39,8 +39,8 @@ Our initial analysis was to find out our shape of data including finding their r
 	- Numpy
 	- Date Time
 	- Pyodbc
--Microsoft SQL
--Tableau
+- Microsoft SQL
+- Tableau
 
 
 Google slides link: https://docs.google.com/presentation/d/1YsTrKkXzDnzWGElksHiISTcvOJJ-okg0IZHveucjpxA/edit?usp=sharing
